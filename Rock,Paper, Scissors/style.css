@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+.header h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: #473198;
+}
+.header h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    color: #473198;
+}
+
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .logo img{
+    width: 250px;
+    max-width: 250px;
+    padding: 0.5rem;
+}
+.instructions{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.instructions h2{
+    font-size: 2.5rem;
+    font-style: italic;
+    color: indigo;
+}
+.instructions ul{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.instructions .game_init{
+    margin: 1rem;
+    flex-grow: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.game_init input{
+    padding: 0.5rem 0.2rem;
+    width:250px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+.game_init input:focus{
+    border: 2px solid dodgerblue;
+}
+.game_init button{
+    width: 250px;
+    padding: 0.5rem 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ;
+}
+.game_init button:hover{
+    background-color: dodgerblue;
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.score h2{
+    font-size: 2.5rem;
+    font-style: italic;
+    color: #473198;
+}
+.score span{
+    font-size: 2rem;
+}
+.game-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.game-section .user_select-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.user_select-card img{
+    max-width: 150px;
+    width: 150px;
+    cursor: pointer;
+    margin: 0.3rem;
+    transition: all 0.2s ease-in;
+}
+.game-section .comp_select-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.comp_select-card img{
+    max-width: 150px;
+    width: 150px;
+    cursor: pointer;
+    margin: 0.3rem;
+}  
+.user_select-card img:hover{
+    transform: scale(1.1);
+    border: 2px solid dodgerblue;
+} 
+.compstage{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-grow: 0.5;
+}
+.popup{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    /* top: 150%; */
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 115%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup h1{
+    font-size: 3rem;
+    font-style: italic;
+    color: indigo;
+    margin: 1rem;
+}
+.popup button{
+    width: 200px;
+    padding: 0.5rem 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
+}
+.popup button:hover{
+    background-color: dodgerblue;
+}
+.compstage .versus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.compstage .user-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.user-card h2{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #473198;
+}
+.user-card img{
+    max-width: 150px;
+    width: 150px;
+}
+.compstage .comp-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.comp-card h2{
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #473198;
+}
+.comp-card img{
+    max-width: 150px;
+    width: 150px;
+}

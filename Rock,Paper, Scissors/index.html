@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rock Paper Scissors</h1>
+            <h2>Welcome To A Casual Game of Rock Paper Scissors</h2>
+            <div class="logo">
+                <img src="./assets/rock-paper-scissors.png" alt="logo">
+            </div>
+        </div>
+        <div class="instructions">
+            <div>
+                <h2>How To Play Game</h2>
+                <ul> Enter your Playername to set your playername</ul>
+                <ul>Click start game</ul>
+                <ul>Select your preferred hand option to play</ul>
+                <ul>Wait for computer to play his turn</ul>
+                <ul>Rock beats scissors</ul>
+                <ul>Paper beats rock</ul>
+                <ul>Scissors beats paper</ul>
+                <ul>A game of 3 rounds determines winner</ul>
+            </div>
+            <div class="game_init">
+                <input type="text" id="input" placeholder="PlayerName"/>
+                
+            </div>
+        </div>
+        <div class="score" id="score">
+            <h2>Player1: <span id="username"> Mike</span></h2>
+            <h2>Score: <span id="userScore"> 0 </span><spn>:</spn><span id="compScore"> 0</span></h2>
+            <h2>Player2: <span>CompMan</span></h2>
+        </div>
+        <div class="game-section">
+            <div class="user_select-card">
+                <img id="rock" src="./assets/rockpng.png" alt="rock">Rock</img>
+                <img id="paper" src="./assets/paperpng.png" alt="paper">Paper</img>
+                <img id="scissors" src="./assets/scissorspng.png" alt="scissors">Scissors</img>
+            </div>
+            <div class="compstage">
+                <div class="popup" id="popup">
+                    <h1>Game Over</h1>
+                    <h2 class="popup_message"> hurray</h2>
+                    <button id="reset">New Game</button>
+                </div>
+                <div class="user-card">
+                    <h2>User</h2>
+                    <img src="./assets/rockpng.png" id="selectedCard" alt="selectedCard"/>
+                </div>
+                <div class="versus">
+                    <h2>Versus</h2>
+                    <h2 id="message">Try and Win Okay. It's random</h2>
+                </div>
+                <div class="comp-card">
+                    <h2>Comp</h2>
+                    <img src="./assets/paperpng.png" id="compSelectedCard" alt="selectedCard"/>
+                </div>
+            </div>
+            <div class="comp_select-card">
+                <img id="rock" src="./assets/rockpng.png" alt="rock"/>
+                <img id="paper" src="./assets/paperpng.png" alt="paper"/>
+                <img id="scissors" src="./assets/scissorspng.png" alt="scissors"/>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
